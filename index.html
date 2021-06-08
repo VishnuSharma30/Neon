@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Le Changement Climatique</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Georgia">
+<link rel="stylesheet" href="style.css">
+<script src="website.js"></script>
+
+<body class="w3-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-grey w3-animate-opacity w3-text-black w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>LE<br>NEON</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">HOME PAGE</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT NEON</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CREDITED SITES</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Neon</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <div class="zoom"><img src="https://images-of-elements.com/neon-2.jpg" style="width:100%" onclick="onClick(this)" alt="Glowing Neon"></div>
+      <div class="zoom"><img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2182,w_3883,x_0,y_1/f_auto,q_auto,w_1100/v1554734721/shape/mentalfloss/567681-pslawinskiwikimediacommons.jpg" style="width:100%" onclick="onClick(this)" alt="Neon Symbol"></div>
+      <div class="zoom"><img src="https://lindseylester.files.wordpress.com/2011/03/neon2.jpg?w\u003d204" style="width:100%" onclick="onClick(this)" alt="Meon Lewis Dot Diagram"></div>
+    </div>
+
+    <div class="w3-third">
+      <div class="zoom"><img src="file:///C:/Users/Dell/Downloads/Neon%20Bohr%20(1).webp" style="width:100%" onclick="onClick(this)" alt="Neon Bohr Rutherford Diagram"></div>
+      <div class="zoom"><img src="https://static01.nyt.com/images/2020/07/23/business/00nordstream-1/00nordstream-1-articleLarge.jpg?quality=75&auto=webp&disable=upscale" style="width:100%" onclick="onClick(this)" alt="Neon Lights"></div>
+      <div class="zoom"><img src="https://smartcdn.prod.postmedia.digital/montrealgazette/wp-content/uploads/2019/03/afp_1eo3sp.jpg" style="width:100%" onclick="onClick(this)" alt="Neon Periodic Table"></div>
+    </div>
+    
+    <div class="w3-third">
+      <div class="zoom"><img src="https://cdn.shopify.com/s/files/1/0438/6078/7361/articles/neoncreationswarning-2-1_8db71acc-1144-4256-a823-b7eed24faf0a_2000x.jpg?v=1597492473" style="width:100%" onclick="onClick(this)" alt="Neon Risks"></div>
+      <div class="zoom"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Neon_discharge_tube.jpg" style="width:100%" onclick="onClick(this)" alt="Heated Neon"></div>
+      <div class="zoom"><img src="https://plainmagazine.com/wp-content/uploads/2018/01/content_plain-magazine-slava-semeniuta-photography-01.jpg" style="width:100%" onclick="onClick(this)" alt="Wet Neon"></div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-gray" style="padding-top:0" onclick="this.style.display='none'">
+    <button class="w3-button w3-teal w3-xlarge w3-display-topright">×</button>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-gray w3-center w3-text-light-grey w3-padding-32" id="about">
+    <div class="about w3-half">
+      <img src="https://i.pinimg.com/originals/49/7f/dd/497fdd28f201e2232912b22085bd42c8.jpg" alt="La Terre" class="w3-image w3-padding-25" width="375" height="400">
+    </div>
+    <div class="w3-half" style="max-width:600px">
+      <div class="about"><h2>Bonjour, Un Message Importante!</h2></div>
+      <p>
+    Les changements climatiques ont un grand impact sur la vie de tout le monde. Nous avons une terre et douze ans pour sauver la terre du changement climatique 
+        qui est permanent. <br><br>Quoi et pourquoi c’est là, qu'est-ce que c’est le changement climatique. Le changement climatique sont les gaz qui sont produits 
+        par les quenouilles surpeuplées et les humains réchauffent la terre et son atmosphère. Ça va éventuellement causer la mort de la terre si on continue sur 
+        le même chemin que nous allons maintenant.<br><br>Pourquoi s'en soucier ? On doit s'en soucier parce que si nous allons sur ce chemin, le changement 
+        climatique va devenir irréversible en 12 ans. Si ça se passe, tout le monde est mort. On doit se soucier de vivre et être ici. On doit changer les choses 
+        qui sont les plus mauvaises pour la terre à les plus bonnes pour la terre.<br><br>Il y a des solutions pour le changement climatique comme l'énergie solaire, 
+        l'énergie hydre et l'énergie du vent. Si on utilise ces énergies et diminue l'énergie qui vient des sables bitumineux ça peut avoir un grand impact sur le changement
+        climatique. Il y a des compagnies comme Tesla qui ont appliqué ces changements comme le gigafactory de tesla et ils ont aussi fait des bardeaux qui sont juste de les 
+        petites pannes solaires et ça peut supporter une grande maison. Si tout le monde juste fait des changements comme ça on peut inverser les changements climatiques.
+        <br><br>Pour rester sur les nouveaux a propos du changement climatique, écouter mon podcast qui vient en Février de 2021 merci de lire mon site web. Change Le Monde.
+
+    </div>
+    
+        <div class="w3-container">
+      <hr class="w3-opacity">
+      <h3 class="w3-padding-16">My Sources!</h3>
+      <div class="w3-row">
+        <div class="w3-quarter w3-padding-16">
+          <div class="w3-card-4 w3-hover-red" style="width:90%">
+            <a href="https://www.britannica.com/science/neon-chemical-element">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Encyclop%C3%A6dia_Britannica.svg/1200px-Encyclop%C3%A6dia_Britannica.svg.png" alt="Britannica" class="w3-center" style="width:90%">
+            </a>
+            <div class="w3-container w3-center">
+              <p>Britannica</p>
+            </div>
+          </div>
+        </div>
+
+    <div class="w3-quarter w3-padding-16">
+          <div class="w3-card-4 w3-hover-red" style="width:90%">
+            <a href="https://www.azom.com/article.aspx?ArticleID=7925">
+              <img src="https://www.azom.com/themes/Standard/images/full_site_logo.png" alt="Azo Materials" class="w3-center" style="width:90%">
+            </a>
+            <div class="w3-container w3-center">
+              <p>Azo Materials</p>
+            </div>
+          </div>
+        </div>
+        
+            <div class="w3-quarter w3-padding-16">
+          <div class="w3-card-4 w3-hover-red" style="width:90%">
+            <a href="https://en.wikipedia.org/wiki/Neon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Wikipedia_svg_logo.svg/1200px-Wikipedia_svg_logo.svg.png" alt="Wikipedia" class="w3-center" style="width:90%">
+            </a>
+            <div class="w3-container w3-center">
+              <p>Wikipedia</p>
+            </div>
+          </div>
+        </div>
+    
+    <div class="w3-quarter w3-padding-16">
+          <div class="w3-card-4 w3-hover-red" style="width:90%">
+            <a href="https://www.lenntech.com/periodic/elements/ne.htm">
+              <img src="https://www.lenntech.com/images/Logo/Lenntech-water.png" alt="LennTech" class="w3-center" style="width:90%">
+            </a>
+            <div class="w3-container w3-center">
+              <p>LennTech</p>
+            </div>
+          </div>
+        </div>
+
+</body>
+</html>
